@@ -1,0 +1,17 @@
+1 SQLiteOpenHelper
+        1》重写构造方法
+        2》 重写两个成员方法onCreate  onUpdate
+        3》 构造方法用来拿到helper对象（创建数据库），在根据helper对象来打开数据库
+        4》 onCreate中建表
+        5》 onUpdate中更新数据库
+        6》创建数据库要根据用户id来创建，不然一个app中切换用户数据库会混乱
+        7》建数据库
+            一般构造方法只要两个参数即可（context，db名字），其他参数写在helper中
+            总共需要4个参数（context，db名字，null，version）第三不知道，但是null即可
+            第四个版本号一般在helper中写死即可
+            context一般用的是getApplationContext,那么为啥不把context也写死呢？
+        8》打开数据库
+            db.getWritableDatabase()
+        9》建立数据库因为有了helper变的很简单
+        10》建表语句
+        11> 查询语句

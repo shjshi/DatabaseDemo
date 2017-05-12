@@ -1,0 +1,12 @@
+http://www.w3school.com.cn/sql/sql_create_table.asp
+
+CREATE TABLE 语句
+    1 CREATE TABLE 语句用于创建数据库中的表。
+    2 SQL CREATE TABLE 语法
+        CREATE TABLE 表名称
+        (
+        列名称1 数据类型,
+        列名称2 数据类型,
+        列名称3 数据类型,
+        ....
+        )
